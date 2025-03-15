@@ -1,21 +1,61 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my web</title>
+    <title>My first web page</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background-color: #f4f4f4; }
-        h1 { color: #007bff; }
-        .container { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
-        footer { margin-top: 20px; font-size: 14px; color: gray; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #ecedf0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #34495e;
+            font-size: 1.1em;
+            margin: 20px 0;
+        }
+
+        .tech-logo {
+            width: 500px;
+            margin: 30px 0;
+            transition: transform 0.3s ease;
+        }
+
+        .tech-logo:hover {
+            transform: rotate(-5deg) scale(1.05);
+        }
+
+        .highlight {
+            color: #3498db;
+            font-weight: 600;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to my website!</h1>
-        <p>This is a web page built with Node.js and Express.</p>
+        <h1> Welcome to my website!</h1>
+        <img src="welcome.jpg" alt="My first web page" class="tech-logo">
+        <p>This is a web page built with <span class="highlight">Node.js</span> and <span class="highlight">Express. </span></p>
     </div>
-    <footer>&copy; 2025 My Website. All rights reserved.</footer>
 </body>
 </html>
