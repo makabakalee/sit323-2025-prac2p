@@ -1,43 +1,21 @@
+// Import Express framework
 const express = require('express');
+// Create Express application instance
 const app = express();
+
+// Serve static files from 'public' directory (CSS/images/etc)
+app.use(express.static('public'));
+
+// Set server port
 const port = 3000;
 
-const style = `
-<style>
-  h1 {
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(45deg, #2563eb, #4f46e5);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: 2px 2px 4px rgba(5, 5, 5, 0.1);
-    font-size: calc(2rem + 1vw);
-    text-align: center;
-    padding: 2rem;
-  }
-</style>
-`;
-
+// Handle root path GET request
 app.get('/', (req, res) => {
-    res.send(`
-      ${style}
-      <div style="
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background:rgb(3, 3, 3);
-      ">
-        <h1 class="hero-text">Welcome to my Node.js with Express site!</h1>
-      </div>
-    `);
-  });
-
-
-    
-
-app.listen(port,()=>{
-    console.log(`Server running at http://localhost:${port}`);
+    // Return simple HTML content
+    res.send('<h1>Welcome to my Node.js and Express Site!</h1>');
 });
 
-app.use(express.static('public'));
+// Start server
+app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}`);
+});

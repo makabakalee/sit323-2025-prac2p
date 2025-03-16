@@ -1,18 +1,29 @@
+<!-- HTML5 doctype declaration -->
 <!DOCTYPE html>
-<html lang="zh-CN">
+<!-- Set document language to English -->
+<html lang="en">
 <head>
+      <!-- Character encoding -->
     <meta charset="UTF-8">
+
+    <!-- Responsive viewport settings -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My first web page</title>
+
+     <!-- Page title -->
+    <title>SIT323 task2</title>
+
+    <!-- Inline CSS styles -->
     <style>
+        /* Global base styles */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            margin: 0;
+            margin: 0;  
             padding: 0;
             background-color: #ecedf0;
         }
 
+        /* Content container styling */
         .container {
             max-width: 800px;
             margin: 50px auto;
@@ -23,28 +34,33 @@
             text-align: center;
         }
 
+        /* Main heading style */
         h1 {
             color: #2c3e50;
             font-size: 2.5em;
             margin-bottom: 20px;
         }
 
+        /* Paragraph styling */
         p {
             color: #34495e;
             font-size: 1.1em;
             margin: 20px 0;
         }
 
+        /* Tech logo image styling */
         .tech-logo {
             width: 500px;
             margin: 30px 0;
             transition: transform 0.3s ease;
         }
 
+        /* Image hover effect */
         .tech-logo:hover {
             transform: rotate(-5deg) scale(1.05);
         }
 
+        /* Highlight text style */
         .highlight {
             color: #3498db;
             font-weight: 600;
@@ -52,9 +68,15 @@
     </style>
 </head>
 <body>
+    <!-- Page content container -->
     <div class="container">
         <h1> Welcome to my website!</h1>
-        <img src="welcome.jpg" alt="My first web page" class="tech-logo">
+        <!--  
+            src: Image path
+            alt: Image description
+        -->
+        <img src="welcome.jpg" alt="Welcome" class="tech-logo">
+          <!-- Highlighted text using span -->
         <p>This is a web page built with <span class="highlight">Node.js</span> and <span class="highlight">Express. </span></p>
     </div>
 </body>
