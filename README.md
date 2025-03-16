@@ -46,7 +46,7 @@ SIT323-2025-PRAC2P/
 
 
 ## Code Implementation
-1. Serve Code (app.js):
+<!-- 1. Serve Code (app.js):
 // Import Express framework
 const express = require('express');
 // Create Express application instance
@@ -67,9 +67,10 @@ app.get('/', (req, res) => {
 // Start server
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
-});
+}); -->
 
-2. Static Page (public/index.html)
+
+<!-- 2. Static Page (public/index.html)
 <!-- HTML5 doctype declaration -->
 <!DOCTYPE html>
 <!-- Set document language to English -->
@@ -152,7 +153,7 @@ app.listen(port, () => {
         <p>This is a web page built with <span class="highlight">Node.js</span> and <span class="highlight">Express. </span></p>
     </div>
 </body>
-</html>
+</html> -->
 
 ## Running & Testing
 1. Start the Server
@@ -176,4 +177,3 @@ app.listen(port, () => {
 4. Push Code
     ```bash
     git push -u origin main
-                      
