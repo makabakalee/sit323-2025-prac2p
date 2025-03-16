@@ -46,7 +46,7 @@ SIT323-2025-PRAC2P/
 
 
 ## Code Implementation
-<!-- 1. Serve Code (app.js):
+1. <!--  Serve Code (app.js):
 // Import Express framework
 const express = require('express');
 // Create Express application instance
@@ -70,7 +70,7 @@ app.listen(port, () => {
 }); -->
 
 
-<!-- 2. Static Page (public/index.html)
+2. <!--  Static Page (public/index.html)
 <!-- HTML5 doctype declaration -->
 <!DOCTYPE html>
 <!-- Set document language to English -->
