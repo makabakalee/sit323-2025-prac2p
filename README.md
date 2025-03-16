@@ -53,8 +53,8 @@ SIT323-2025-PRAC2P/
 
 
 ## Code Implementation
-1. <!--  Serve Code (app.js):
-// Import Express framework
+1.  Serve Code (app.js):
+<!-- // Import Express framework
 const express = require('express');
 // Create Express application instance
 const app = express();
