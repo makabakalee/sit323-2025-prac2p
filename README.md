@@ -18,7 +18,7 @@ Before starting, ensure the following tools are installed:
 - **Node.js** (includes npm)  
   Download: [Node.js Official Site](https://nodejs.org/)  
   Verify: Run `node -v` and `npm -v` in your terminal.
-  
+
 
 ## Project initialization and dependency installation
 1. Create a local folder named `sit323-2025-prac2p` to store all project files.
@@ -54,7 +54,8 @@ SIT323-2025-PRAC2P/
 
 ## Code Implementation
 1.  Serve Code (app.js):
-<!-- // Import Express framework
+```markdown
+// Import Express framework
 const express = require('express');
 // Create Express application instance
 const app = express();
@@ -74,10 +75,11 @@ app.get('/', (req, res) => {
 // Start server
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
-}); -->
+});
 
 
-2. <!--  Static Page (public/index.html)
+2.  Static Page (public/index.html):
+```markdown
 <!-- HTML5 doctype declaration -->
 <!DOCTYPE html>
 <!-- Set document language to English -->
@@ -160,7 +162,7 @@ app.listen(port, () => {
         <p>This is a web page built with <span class="highlight">Node.js</span> and <span class="highlight">Express. </span></p>
     </div>
 </body>
-</html> -->
+</html>
 
 ## Running & Testing
 1. Start the Server
